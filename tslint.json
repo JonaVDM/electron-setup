@@ -13,7 +13,8 @@
         "no-consecutive-blank-lines": false,
         "quotemark": {
             "options": ["single"]
-        }
+        },
+        "no-console": false
     },
     "jsRules": {
         "max-line-length": {
