@@ -1,0 +1,36 @@
+.column {
+    grid-column: span $xs-columns;
+
+    @for $counter from 1 to 5 {
+        &-r-#{$counter} {
+
+            grid-column: span $xs-columns;
+
+            @include media($sm) {
+                grid-column: span $sm-columns;
+            }
+
+            @include media($md) {
+                grid-column: span $md-columns / 4 * $counter;
+            }
+
+            @include media($lg) {
+                grid-column: span $lg-columns / 4 * $counter;
+            }
+
+            @include media($xl) {
+                grid-column: span $xl-columns / 4 * $counter;
+            }
+        }
+    }
+
+    &-m {
+        &t {
+            @include spacing(margin-top);
+        }
+
+        &b {
+            @include spacing(margin-bottom);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+[{
+    "label": "stuff",
+    "icon": "random",
+    "tiles": [{
+        "color": "#f20e0e",
+        "icon": "newspaper",
+        "label": "Nieuws|News",
+        "name": "news"
+    }]
+}, {
+    "label": "Safety",
+    "icon": "hard-hat",
+    "tiles": [{
+            "color": "#e53900",
+            "name": "screen-off",
+            "icon": "lock",
+            "label": "Scherm uit"
+        },
+        {
+            "color": "#e53900",
+            "name": "lock-pc",
+            "icon": "lock",
+            "label": "Scherm aan"
+        },
+        {
+            "color": "#e53900",
+            "name": "lock-pc",
+            "icon": "lock",
+            "label": "Lock PC"
+        },
+        {
+            "color": "#e53900",
+            "name": "logoff",
+            "icon": "lock",
+            "label": "Log uit"
+        },
+        {
+            "color": "#e53900",
+            "name": "shutdown",
+            "icon": "lock",
+            "label": "Uitschakelen"
+        },
+        {
+            "color": "#e53900",
+            "name": "chrome-incognito",
+            "icon": "lock",
+            "label": "Incognito Tab"
+        },
+        {
+            "color": "#e53900",
+            "name": "lock-pc",
+            "icon": "lock",
+            "label": "Windows Defender"
+        },
+        {
+            "color": "#e53900",
+            "name": "sign-in-options",
+            "icon": "lock",
+            "label": "Login Settings"
+        },
+        {
+            "color": "#e53900",
+            "name": "lock-pc",
+            "icon": "lock",
+            "label": "Adblocker"
+        },
+        {
+            "color": "#e53900",
+            "name": "lock-pc",
+            "icon": "lock",
+            "label": "Cookieblocker"
+        }
+    ]
+}]

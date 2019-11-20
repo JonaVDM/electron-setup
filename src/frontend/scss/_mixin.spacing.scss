@@ -1,0 +1,21 @@
+@mixin spacing($property: margin) {
+    @include media($xs) {
+        #{$property}: $xs-spacing;
+    }
+
+    @include media($sm) {
+        #{$property}: $sm-spacing;
+    }
+
+    @include media($md) {
+        #{$property}: $md-spacing;
+    }
+
+    @include media($lg) {
+        #{$property}: $lg-spacing;
+    }
+
+    @include media($xl) {
+        #{$property}: $xl-spacing;
+    }
+}

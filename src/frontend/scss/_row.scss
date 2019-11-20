@@ -1,0 +1,45 @@
+.row {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: grid;
+
+    @include media($xs) {
+        padding: 0 $xs-padding;
+        grid-column-gap: $xs-gap;
+        grid-template-columns: repeat($xs-columns, 1fr);
+    }
+
+    @include media($sm) {
+        padding: 0 $sm-padding;
+        grid-column-gap: $sm-gap;
+        grid-template-columns: repeat($sm-columns, 1fr);
+    }
+
+    @include media($md) {
+        padding: 0 $md-padding;
+        grid-column-gap: $md-gap;
+        grid-template-columns: repeat($md-columns, 1fr);
+    }
+
+    @include media($lg) {
+        padding: 0 $lg-padding;
+        grid-column-gap: $lg-gap;
+        grid-template-columns: repeat($lg-columns, 1fr);
+    }
+
+    @include media($xl) {
+        padding: 0 $xl-padding;
+        grid-column-gap: $xl-gap;
+        grid-template-columns: repeat($xl-columns, 1fr);
+    }
+
+    &-p {
+        &t {
+            @include spacing(margin-top);
+        }
+
+        &b {
+            @include spacing(margin-bottom);
+        }
+    }
+}

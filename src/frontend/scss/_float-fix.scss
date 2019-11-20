@@ -1,0 +1,5 @@
+.float-fix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,44 @@
+// The max width of the page
+$max-width: 1440px;
+
+// The break points used in the mixin media
+$xs-break: 0px;
+$sm-break: 576px;
+$md-break: 768px;
+$lg-break: 1024px;
+$xl-break: 1200px;
+
+// The amount of columns per screen size
+$xs-columns: 4;
+$sm-columns: 4;
+$md-columns: 6;
+$lg-columns: 8;
+$xl-columns: 8;
+
+// The padding around the screen
+$xs-padding: 5px;
+$sm-padding: 6px;
+$md-padding: 7px;
+$lg-padding: 8px;
+$xl-padding: 8px;
+
+// The gap size for the grid
+$xs-gap: 10px;
+$sm-gap: 10px;
+$md-gap: 20px;
+$lg-gap: 30px;
+$xl-gap: 30px;
+
+// The spacing used in the mixin spacing
+$xs-spacing: 10px;
+$sm-spacing: 10px;
+$md-spacing: 15px;
+$lg-spacing: 25px;
+$xl-spacing: 30px;
+
+// The media query's
+$xs: 'only screen and (min-width: #{$xs-break})';
+$sm: 'only screen and (min-width: #{$sm-break})';
+$md: 'only screen and (min-width: #{$md-break})';
+$lg: 'only screen and (min-width: #{$lg-break})';
+$xl: 'only screen and (min-width: #{$xl-break})';

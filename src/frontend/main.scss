@@ -1,0 +1,12 @@
+//Theme settings
+@import 'scss/grid';
+@import 'scss/mixin.media';
+@import 'scss/mixin.spacing';
+
+// Actual css things
+@import 'scss/colors';
+@import 'scss/reset';
+@import 'scss/row';
+@import 'scss/column';
+@import 'scss/flex-center';
+@import 'scss/float-fix';
