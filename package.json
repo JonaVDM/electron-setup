@@ -13,7 +13,7 @@
     "watch": "nodemon",
     "watch-frontend": "webpack --watch",
     "build": "node build.js",
-    "lint": "tslint -c tslint.json -p tsconfig.json"
+    "lint": "tslint --fix -c tslint.json -p tsconfig.json"
   },
   "license": "",
   "devDependencies": {
@@ -21,11 +21,13 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.3",
     "@types/friendly-errors-webpack-plugin": "^0.1.2",
+    "@types/fs-plus": "^3.0.1",
     "@types/mini-css-extract-plugin": "^0.8.0",
     "@types/node": "^12.11.7",
     "@types/optimize-css-assets-webpack-plugin": "^5.0.1",
     "@types/uglifyjs-webpack-plugin": "^1.1.0",
     "@types/webpack": "^4.41.0",
+    "@types/yargs": "^13.0.3",
     "babel-loader": "^8.0.6",
     "colors": "^1.4.0",
     "css-loader": "^3.2.0",

@@ -1,46 +1,46 @@
-import { app, BrowserWindow, Menu } from "electron";
-import * as path from "path";
+import { app, BrowserWindow, Menu } from 'electron';
+import * as path from 'path';
 
-const args = require('./squirrel/args');
-const squirrel = require('./squirrel/squirrel');
+import args from './squirrel/args';
+import squirrel from './squirrel/squirrel';
 
 let window: Electron.BrowserWindow;
 
 function createWindow() {
   window = new BrowserWindow({
     height: 600,
+    icon: path.join(__dirname, '../img/logo.png'),
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, 'preload.js'),
     },
     width: 800,
-    icon: path.join(__dirname, '../img/logo.png')
   });
 
   Menu.setApplicationMenu(null);
 
-  window.loadFile(path.join(__dirname, "../index.html"));
+  window.loadFile(path.join(__dirname, '../index.html'));
 
-  window.on("closed", () => {
+  window.on('closed', () => {
     window = null;
   });
 }
 
 (() => {
-  const cmd = args.parseArguments(app, process.argv.slice(1)).squirrelCommand
+  const cmd = args.parseArguments(app, process.argv.slice(1)).squirrelCommand;
   if (process.platform === 'win32' && squirrel.handleCommand(app, cmd)) {
-    return
+    return;
   }
 
-  app.on("ready", () => {createWindow();});
+  app.on('ready', () => {createWindow(); });
 
   // Quit when all windows are closed.
-  app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
+  app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
       app.quit();
     }
   });
 
-  app.on("activate", () => {
+  app.on('activate', () => {
     if (window === null) {
       createWindow();
     }

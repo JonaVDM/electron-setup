@@ -1,22 +1,25 @@
 {
-  "extends": "tslint:recommended",
-  "rules": {
-    "max-line-length": {
-      "options": [
-        120
-      ]
+    "extends": "tslint:recommended",
+    "rules": {
+        "max-line-length": {
+            "options": [
+                80
+            ]
+        },
+        "new-parens": true,
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines": false,
+        "quotemark": {
+            "options": ["single"]
+        }
     },
-    "new-parens": true,
-    "no-arg": true,
-    "no-bitwise": true,
-    "no-conditional-assignment": true,
-    "no-consecutive-blank-lines": false
-  },
-  "jsRules": {
-    "max-line-length": {
-      "options": [
-        120
-      ]
+    "jsRules": {
+        "max-line-length": {
+            "options": [
+                80
+            ]
+        }
     }
-  }
 }
